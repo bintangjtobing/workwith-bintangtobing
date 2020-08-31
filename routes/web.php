@@ -14,22 +14,8 @@
 use App\Mail\kembangkanlahMail;
 use Illuminate\Support\Facades\Redirect;
 
-Route::get('/events/{event}', 'EventsController@show')
-    ->name('events.show');
-Route::feeds();
 Route::get('/', function () {
     return view('new');
-});
-Route::get('/work', function () {
-    return Redirect::to('https://workwith.bintangtobing.com');
-});
-// SOCIAL MEDIA
-Route::get('/mau-liat-apa-nih', function () {
-    return view('linktree.index');
-});
-Route::get('/kirim-vote/{tokens}', function () {
-    \Mail::to('hello@bintangtobing.com')->send(new kembangkanlahMail);
-    return redirect('/mau-liat-apa-nih')->with('sukses', 'Dukungan kamu telah dikirim. Makasih ya.');
 });
 Route::get('/youtube', function () {
     return Redirect::to('http://www.youtube.com/c/BintangJeremiaTobing');
@@ -52,16 +38,3 @@ Route::get('/github', function () {
 Route::get('/facebook', function () {
     return Redirect::to('https://facebook.com/bintangjtobing');
 });
-
-Route::get('/dark', function () {
-    return view('dark');
-});
-Route::post('/postmessages', 'homeController@postemail');
-Route::get('sign-in', 'SignController@index');
-
-
-Route::get('/tool', function () {
-    return view('dashII.index');
-});
-Route::get('/email', 'SignController@email');
-Route::get('email/read/{message_id}', 'SignController@emailread');

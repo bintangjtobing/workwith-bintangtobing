@@ -77,7 +77,6 @@
                 "https://twitter.com/bintangjtobing"
             ]
         }
-
     </script>
     <div id="wrapper" class="clearfix">
         <header id="header" class="transparent-header sticky-transparent" data-sticky-shrink="false">
@@ -583,7 +582,6 @@
                 element.removeClass('blurred-image-visible');
             }
         });
-
     </script>
 
 </body>
