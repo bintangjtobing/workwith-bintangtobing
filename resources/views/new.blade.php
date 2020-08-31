@@ -4,16 +4,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     {{-- VERIFICATION --}}
-    <meta name="google-site-verification" content="MD23XAsqv9D3qtHbVHbHfHoGDO8gQzYLI1jBN6Fha8M">
-    <meta name="msvalidate.01" content="85BB1F108E1BB71008A6260F2D262234">
+    <meta name="google-site-verification" content="">
+    <meta name="msvalidate.01" content="">
 
     <!-- Meta -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{!!asset('storage/img/icon-64x.png')!!}" alt="icon Bintang Tobing">
+    <link rel="shortcut icon" href="{!!asset('storage/img/icon-64x.png')!!}')!!}" alt="icon Bintang Tobing">
     <!-- Title -->
-    <title>Hi! I'm Bintang Tobing.</title>
+    <title>Work with | Bintang Tobing.</title>
     <link
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700,900|Playfair+Display:400,700&display=swap"
         rel="stylesheet" type="text/css">
@@ -21,20 +21,18 @@
     <link rel="stylesheet" href="{!!asset('homepage/style.css')!!}" type="text/css">
     <link rel="stylesheet" href="{!!asset('homepage/css/dark.css')!!}" type="text/css">
 
-    <!-- Resume Specific Stylesheet -->
-    <link rel="stylesheet" href="{!!asset('homepage/resume/resume.css')!!}" type="text/css">
-    <link rel="stylesheet" href="{!!asset('homepage/resume/css/fonts.css')!!}" type="text/css">
-    <!-- / -->
-
     <link rel="stylesheet" href="{!!asset('homepage/css/font-icons.css')!!}" type="text/css">
     <link rel="stylesheet" href="{!!asset('homepage/css/animate.css')!!}" type="text/css">
     <link rel="stylesheet" href="{!!asset('homepage/css/magnific-popup.css')!!}" type="text/css">
+
+    <link rel="stylesheet" href="{!!asset('homepage/freelancer/css/fonts.css')!!}" type="text/css" />
+    <link rel="stylesheet" href="{!!asset('homepage/freelancer/freelancer.css')!!}" type="text/css" />
     <link rel="stylesheet" href="{!!asset('homepage/css/custom.css')!!}" type="text/css" />
     <link rel="stylesheet" href="{!!asset('homepage/css/colors.php?color=e4911b')!!}" type="text/css">
 
 
     {{-- META CONTENT --}}
-    <meta name="title" content="Hi! I'm Bintang Tobing">
+    <meta name="title" content="Work with Bintang Tobing.">
     <meta name="keywords"
         content="Bintang Tobing, Web Developer, Freelance, Jasa Bintang Tobing, Bintang, BintangTobing, designer, web Bintang, bintangtobing, resume bintang tobing, cv bintang tobing, curicullum vitae bintang tobing">
     <meta name="description"
@@ -46,7 +44,7 @@
     {{-- SOCIAL MEDIA TAGS --}}
     {{-- FACEBOOK SOCMED --}}
     <meta property="fb:admins" content="111044563749542">
-    <meta property="og:title" content="Hi! I'm Bintang Tobing">
+    <meta property="og:title" content="Work with Bintang Tobing.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{URL::current()}}">
     <meta property="og:image" content="{!!asset('storage/img/cover.jpg')!!}">
@@ -56,37 +54,46 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{URL::current()}}">
-    <meta property="twitter:title" content="Hi! I'm Bintang Tobing">
+    <meta property="twitter:title" content="Work with Bintang Tobing.">
     <meta property="twitter:description" content="Hi I'm Bintang Tobing, you can call me Bin. As you can see, yes this is my personal page for my resume,
         curicullum vitae, also you can see my projects.">
     <meta property="twitter:image" content="https://bintangtobing.com/storage/img/cover.jpg">
 
 </head>
 
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Bintang Tobing",
+        "url": "https://bintangtobing.com",
+        "address": "Jl Pelita IV Gang Aman No 7 Medan",
+        "sameAs": [
+            "https://facebook.com/bintangjtobing",
+            "https://instagram.com/bintangjtobing",
+            "https://twitter.com/bintangjtobing"
+        ]
+    }
+</script>
+
 <body class="stretched">
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "Bintang Tobing",
-            "url": "https://bintangtobing.com",
-            "address": "Jl Pelita IV Gang Aman No 7 Medan",
-            "sameAs": [
-                "https://facebook.com/bintangjtobing",
-                "https://instagram.com/bintangjtobing",
-                "https://twitter.com/bintangjtobing"
-            ]
-        }
-    </script>
     <div id="wrapper" class="clearfix">
-        <header id="header" class="transparent-header sticky-transparent" data-sticky-shrink="false">
+        <header id="header" class="border-bottom-0 no-sticky transparent-header">
             <div id="header-wrap">
                 <div class="container">
                     <div class="header-row">
                         <div id="logo">
-                            <a href="/" class="standard-logo font-secondary ls3" style="line-height: 90px;">Bintang.</a>
-                            <a href="/" class="retina-logo font-secondary ls3" style="line-height: 90px;">Bintang.</a>
+                            <a href="demo-freelancer.html" class="standard-logo"><img
+                                    src="{!!asset('homepage/freelancer/images/logo.png')!!}"
+                                    alt="Workwith Bintang Logo"></a>
+                            <a href="demo-freelancer.html" class="retina-logo"><img
+                                    src="{!!asset('homepage/freelancer/images/logo@2x.png')!!}"
+                                    alt="Workwith Bintang Logo"></a>
                         </div>
+                        <div class="header-misc">
+                            <a href="#" class="button button-border rounded-pill">Email Us</a>
+                        </div>
+
                         <div id="primary-menu-trigger">
                             <svg class="svg-trigger" viewBox="0 0 100 100">
                                 <path
@@ -99,26 +106,14 @@
                             </svg>
                         </div>
                         <nav class="primary-menu">
-                            <ul class="menu-container one-page-menu custom-spacing" data-easing="easeInOutExpo"
-                                data-speed="1250" data-offset="0">
-                                <li class="menu-item current"><a class="menu-link" href="#" data-href="#wrapper"><i
-                                            class="icon-line2-home"></i>
-                                        <div>Intro</div>
+                            <ul class="menu-container">
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>About me</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-skills"><i
-                                            class="icon-line2-star"></i>
-                                        <div>Skills</div>
+                                <li class="menu-item"><a class="menu-link" href="#">
+                                        <div>Works</div>
                                     </a></li>
-                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-about"><i
-                                            class="icon-line2-user"></i>
-                                        <div>About</div>
-                                    </a></li>
-                                <li class="menu-item"><a class="menu-link" href="#" data-href="#section-works"><i
-                                            class="icon-line2-grid"></i>
-                                        <div>Portfolio</div>
-                                    </a></li>
-                                <li class="menu-item"><a class="menu-link" href="#" data-href="#footer"><i
-                                            class="icon-line2-envelope"></i>
+                                <li class="menu-item"><a class="menu-link" href="#">
                                         <div>Contact</div>
                                     </a></li>
                             </ul>
@@ -126,461 +121,705 @@
                     </div>
                 </div>
             </div>
-            <div class="header-wrap-clone"></div>
         </header>
-        <section id="slider" class="slider-element min-vh-60 min-vh-md-100 include-header">
-            <div class="vh-100 vw-100 position-fixed"
-                style="top: 0; left: 0; background: #FFF url('{!!asset('homepage/media/resume/1.png')!!}') no-repeat top center; background-size: cover; background-attachment: fixed;">
+        <section id="slider" class="slider-element min-vh-md-100 py-4 include-header"
+            style="background: #FFF url('{!!asset('homepage/freelancer/images/hero-bg.svg')!!}') repeat top center; background-size: cover;">
+            <div class="slider-inner">
+                <div class="vertical-middle slider-element-fade">
+                    <div class="container text-center py-5">
+                        <div class="emphasis-title mb-2">
+                            <h4 class="text-uppercase ls3 font-weight-bolder mb-0">I'm Bintang.</h4>
+                            <h1>
+                                <span id="oc-images" class="owl-carousel image-carousel carousel-widget" data-items="1"
+                                    data-margin="0" data-autoplay="3000" data-loop="true" data-nav="false"
+                                    data-pagi="false" data-animate-in="fadeInUp">
+                                    <div class="oc-item gradient-text gradient-red-yellow text-uppercase">Developer.
+                                    </div>
+                                    <div class="oc-item gradient-text gradient-red-yellow text-uppercase">Freelancer.
+                                    </div>
+                                </span>
+                            </h1>
+                        </div>
 
-                <div class="container">
-                    <div class="slider-caption dark slider-caption-right">
-                        <div>
-                            <h2 class="font-primary ls5" data-animate="fadeIn">Bintang Tobing</h2>
-                            <p class="font-weight-light ls1 d-none d-sm-block" data-animate="fadeIn" data-delay="400">
-                                Full Stack Developer.<br>Medan, Indonesia.</p>
-                            <a href="#section-works"
-                                class="font-primary border-0 ls1 topmargin-sm inline-block more-link text-white dark d-none d-sm-inline-block"
-                                data-animate="fadeIn" data-delay="800" data-scrollto="#section-works"
-                                data-offset="0"><u>My Works</u> &rarr;</a>
+                        <div class="mx-auto" style="max-width: 600px">
+                            <p class="lead font-weight-normal text-dark mb-5">Not only completing your assignments and
+                                projects, but also being responsible for what I do is a priority for me. Don't worry
+                                about how your business is going, in this digital world I will provide the best solution
+                                for you.</p>
+                            <a href="#"
+                                class="button button-dark button-hero h-translatey-3 tf-ts button-reveal overflow-visible bg-dark text-right"><span>View
+                                    our Works</span><i class="icon-line-arrow-right"></i></a>
+                            <a href="#" class="button button-large button-light text-dark bg-transparent m-0"><i
+                                    class="icon-line2-arrow-down font-weight-bold"></i> <u>Contact Me</u></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="vh-100 vw-100 position-fixed blurred-img" style="top: 0; left: 0; background: #FFF url('{!!asset('homepage/media/resume/1.png')!!}') no-repeat top
-                center; background-size: cover; background-attachment: fixed;">
-            </div>
-        </section>
-        <section id="content" class="bg-transparent">
-            <div class="content-wrap pb-0 bg-transparent">
+        </section><!-- #slider end -->
 
-                <div id="section-skills" class="section m-0 page-section dark bg-transparent"
-                    style="padding-bottom: 50px">
+        <!-- Content
+		============================================= -->
+        <section id="content">
+
+            <div class="content-wrap p-0">
+
+                <div class="section mb-0 pt-3 pb-0"
+                    style="background-color: #F4F4F4; margin-top: 150px; overflow: visible;">
+                    <div class="shape-divider" data-shape="wave" data-height="150" data-outside="true"
+                        data-flip-vertical="true" data-fill="#F4F4F4"></div>
                     <div class="container">
-                        <div class="heading-block center">
-                            <h2 class="font-secondary">My Skills.</h2>
+                        <div class="row justify-content-center text-center mt-5">
+                            <div class="col-lg-6">
+                                <div>
+                                    <h3 class="font-weight-bolder h1 mb-4">Graphics Designer & Full Stack Developer,
+                                        Based
+                                        in <span class="gradient-text gradient-horizon">Indonesia</span></h3>
+                                    <p class="mb-5 lead text-black-50 font-weight-extralight">Are you from abroad? Don't
+                                        worry about what country you are from. We can do this from the zoom application.
+                                        Everything must have a solution. Let's first discuss what your target is in
+                                        branding in the digital world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center position-relative">
+                        <div class="parallax min-vh-75"
+                            style="background-image: url('{!!asset('homepage/freelancer/images/me.jpg')!!}'); background-size: cover; background-position: center center;"
+                            data-bottom-top="width: 40vw" data-center-top="width: 100vw;">
+                            <div class="row align-items-center justify-content-center h-100">
+                                <div class="col-auto text-center">
+                                    <a href="/github"
+                                        class="display-4 font-weight-bolder text-white d-inline-block mx-4 h-op-08 op-ts"><u>#github</u></a>
+                                    <a href="/instagram"
+                                        class="display-4 font-weight-bolder text-white d-inline-block mx-4 h-op-08 op-ts"><u>#instagram</u></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shape-divider" data-shape="wave" data-position="bottom"></div>
+                    </div>
+                </div>
+
+                <div class="container" style="max-width: 1000px">
+                    <div class="row col-mb-30 mt-5">
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="1"
+                                        data-to="4" data-refresh-interval="2" data-speed="600"></span></div>
+                                <span>+ Years Of<br>Experience.</span>
+                            </div>
                         </div>
 
-                        <div class="row justify-content-center col-mb-50 mb-0">
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="feature-box fbox-plain">
-                                    <div class="fbox-icon">
-                                        <a href="#"><i class="icon-html5" style="color: #DDD"></i></a>
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="4"
+                                        data-to="85" data-refresh-interval="50" data-speed="1500"></span></div>
+                                <span>% of Works <br>Completed.</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="4"
+                                        data-to="10" data-refresh-interval="50" data-speed="1500"></span></div>
+                                <span>/ 14 Projects <br>Completed.</span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="5"
+                                        data-to="97" data-refresh-interval="30" data-speed="1200"></span></div>
+                                <span>% Satisfied<br>Customers.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line line-sm mb-0"></div>
+                </div>
+
+                <div class="section bg-transparent py-5">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-around">
+                            <div class="col-lg-4">
+                                <h3 class="font-weight-bolder h1 mb-4">What Some of my Clients Say</h3>
+
+                                <div id="oc-testi" class="owl-carousel testimonials-carousel carousel-widget mt-5"
+                                    data-margin="0" data-items="1" data-pagi="true" data-nav="false">
+
+                                    <div class="oc-item">
+                                        <div class="testimonial border-0 shadow-none bg-transparent">
+                                            <div class="testi-content">
+                                                <p>Dalam 3 bulan, yang awal nya website saya kurang terlihat bagus, dan
+                                                    sering terkena serangan, namun sekarang baik baik saja dan terlihat
+                                                    lebih bagus kok.</p>
+                                                <div class="testi-meta d-flex align-items-center">
+                                                    <img src="{!!asset('homepage/freelancer/images/testi/face.png')!!}"
+                                                        alt="Face" width="30">
+                                                    <div>
+                                                        Yong Chen
+                                                        <span class="pl-0"><a href="https://btsa.co.id">BTSA
+                                                                Logistics</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-normal ls2" style="color: #FFF">HTML5</h3>
-                                        <p style="color:#fff;">Start with HTML on high school 2014.</p>
+
+                                    <div class="oc-item">
+                                        <div class="testimonial border-0 shadow-none bg-transparent">
+                                            <div class="testi-content">
+                                                <p>Pengerjaan tepat, design memuaskan, dan yang paling penting
+                                                    bertanggung jawab!</p>
+                                                <div class="testi-meta d-flex align-items-center">
+                                                    <img src="{!!asset('homepage/freelancer/images/testi/face2.png')!!}"
+                                                        alt="Face" width="30">
+                                                    <div>
+                                                        Khaidir
+                                                        <span class="pl-0"><a href="https://euroupvc.co.id">Euro
+                                                                uPVC</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    <div class="oc-item">
+                                        <div class="testimonial border-0 shadow-none bg-transparent">
+                                            <div class="testi-content">
+                                                <p>Website simple dengan integrasi ke facebook membuat customer saya
+                                                    jadi lebih mudah interaksi ke saya sendiri tanpa perlu tau nomor
+                                                    telepon (Whatsapp).</p>
+                                                <div class="testi-meta d-flex align-items-center">
+                                                    <img src="{!!asset('homepage/freelancer/images/testi/face3.png')!!}"
+                                                        alt="Face" width="30">
+                                                    <div>
+                                                        Bella T.
+                                                        <span class="pl-0"><a
+                                                                href="https://starwhisper.id">starwhisper.</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="feature-box fbox-plain">
-                                    <div class="fbox-icon">
-                                        <a href="#"><i class="icon-code" style="color: #DDD"></i></a>
-                                    </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-normal ls2" style="color: #FFF">Javascripts</h3>
-                                        <p style="color:#fff;">deepen javascript knowledge in high school to enter the
-                                            level of education vue.js</p>
-                                    </div>
+                            <div class="col-lg-6">
+                                <img src="{!!asset('homepage/freelancer/images/testi/bg.svg')!!}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="section m-0">
+                    <div class="container">
+                        <div class="row align-items-end justify-content-between mb-5">
+                            <div class="col-lg-5 offset-lg-1">
+                                <div>
+                                    <h3 class="font-weight-bolder h1 mb-4">Latest Creative Works,<br>and Selected
+                                        Projects</h3>
+                                    <p class="lead mb-0">This is my latest works<br> and the best projects i choosed.
+                                    </p>
                                 </div>
+                            </div>
+                            <div class="col-auto">
+                                <a href="#" class="button button-dark button-border rounded-pill">View All Works <i
+                                        class="icon-line-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center col-mb-50">
+                            <div class="col-lg-6 h-translatey-3 tf-ts">
+                                <a href="https://euroupvc.co.id" class="portfolio-item" target="_blank">
+                                    <div class="portfolio-image">
+                                        <img src="{!!asset('homepage/freelancer/images/works/1.jpg')!!}"
+                                            alt="Portfoio Item">
+                                        <div class="bg-overlay">
+                                            <div
+                                                class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
+                                                <h3 class="mb-0 mt-1">Euro uPVC</h3>
+                                                <h5>uPVC, Home Equipment</h5>
+                                            </div>
+                                            <div class="bg-overlay-content align-items-start justify-content-end p-4">
+                                                <div class="overlay-trigger-icon bg-dark text-white"
+                                                    data-hover-animate="fadeInDownSmall"
+                                                    data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
+                                                        class="icon-line-link"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
 
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="feature-box fbox-plain">
-                                    <div class="fbox-icon">
-                                        <a href="#"><i class="icon-picture" style="color: #DDD"></i></a>
+                            <div class="col-lg-6 h-translatey-3 tf-ts">
+                                <a href="https://sarjanamalam.com" class="portfolio-item" target="_blank">
+                                    <div class="portfolio-image">
+                                        <img src="{!!asset('homepage/freelancer/images/works/2.jpg')!!}"
+                                            alt="Portfoio Item">
+                                        <div class="bg-overlay">
+                                            <div
+                                                class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
+                                                <h3 class="mb-0 mt-1">Sarjanamalam.</h3>
+                                                <h5>Forum, Startup</h5>
+                                            </div>
+                                            <div class="bg-overlay-content align-items-start justify-content-end p-4">
+                                                <div class="overlay-trigger-icon bg-dark text-white"
+                                                    data-hover-animate="fadeInDownSmall"
+                                                    data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
+                                                        class="icon-line-link"></i></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-normal ls2" style="color: #FFF">Photoshop</h3>
-                                        <p style="color:#fff;">Having a hobby in design and studying Photoshop to become
-                                            good friends with Photoshop.</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
 
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="feature-box fbox-plain">
-                                    <div class="fbox-icon">
-                                        <a href="#"><i class="icon-laravel" style="color: #DDD"></i></a>
+                            <div class="col-lg-6 h-translatey-3 tf-ts">
+                                <a href="https://btsa.co.id" class="portfolio-item" target="_blank">
+                                    <div class="portfolio-image">
+                                        <img src="{!!asset('homepage/freelancer/images/works/3.jpg')!!}"
+                                            alt="Portfoio Item">
+                                        <div class="bg-overlay">
+                                            <div
+                                                class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
+                                                <h3 class="mb-0 mt-1">BTSA Logistics</h3>
+                                                <h5>Logistics, Management</h5>
+                                            </div>
+                                            <div class="bg-overlay-content align-items-start justify-content-end p-4">
+                                                <div class="overlay-trigger-icon bg-dark text-white"
+                                                    data-hover-animate="fadeInDownSmall"
+                                                    data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
+                                                        class="icon-line-link"></i></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-normal ls2" style="color: #FFF">Laravel</h3>
-                                        <p style="color:#fff;">laravel makes it easier for me to develop sites. Started
-                                            studying this from 2018 to the present.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="feature-box fbox-plain">
-                                    <div class="fbox-icon">
-                                        <a href="#"><i class="icon-css3" style="color: #DDD"></i></a>
-                                    </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-normal ls2" style="color: #FFF">CSS3</h3>
-                                        <p style="color:#fff;">CSS is the most important thing in every element of
-                                            website design. Learning and mastering CSS is the most important part of my
-                                            project work.</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
 
-                            <div class="col-sm-6 col-lg-4">
-                                <div class="feature-box fbox-plain">
-                                    <div class="fbox-icon">
-                                        <a href="#"><i class="icon-php" style="color: #DDD"></i></a>
+                            <div class="col-lg-6 h-translatey-3 tf-ts">
+                                <a href="https://starwhisper.id" class="portfolio-item" target="_blank">
+                                    <div class="portfolio-image">
+                                        <img src="{!!asset('homepage/freelancer/images/works/4.jpg')!!}"
+                                            alt="Portfoio Item">
+                                        <div class="bg-overlay">
+                                            <div
+                                                class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
+                                                <h3 class="mb-0 mt-1">Starwhisper.</h3>
+                                                <h5>Apparel, Online-shop</h5>
+                                            </div>
+                                            <div class="bg-overlay-content align-items-start justify-content-end p-4">
+                                                <div class="overlay-trigger-icon bg-dark text-white"
+                                                    data-hover-animate="fadeInDownSmall"
+                                                    data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350"><i
+                                                        class="icon-line-link"></i></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="fbox-content">
-                                        <h3 class="font-weight-normal ls2" style="color: #FFF">PHP</h3>
-                                        <p style="color:#fff;">Not forgetting the things that support my backend system,
-                                            I am happy with the PHP programming language which I finally got familiar
-                                            with.</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-                <div id="section-about" class="section page-section m-0"
-                    style="background: #EEE url('{!!asset('homepage/media/resume/2.png')!!}') no-repeat center center; background-size: cover; padding: 100px 0">
+                <div class="clear"></div>
+
+                <div class="section bg-transparent py-5">
+
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-5 offset-md-7 clearfix">
-                                <div class="heading-block">
-                                    <?php
-                                    $from = 2015;
-                                    $to = Date('Y');
-                                    $count = $to - $from;
-                                    ?>
-                                    <h2 class="font-secondary">About Me.</h2>
-                                    <span>Hello! I am Bintang Tobing, a self-taught Digital Designer & Developer with
-                                        more than {{$count}} years of work experience.
-                                        <br><br>
-                                        So i started programming on web development since 2015, and now i have 10+ sites
-                                        with different system within. The biggest system that i ever made is, employee
-                                        on office management system, issue report system, online forum with chat system
-                                        by ajax and vue js programming. </span>
-                                </div>
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <td class="border-top-0"><strong>Name:</strong></td>
-                                            <td class="border-top-0">Bintang Tobing</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Gender:</strong></td>
-                                            <td>Male</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Email:</strong></td>
-                                            <td>hello@bintangtobing.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Phone:</strong></td>
-                                            <td>+62 812 62845980</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Website:</strong></td>
-                                            <td>bintangtobing.com</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Date of Birthday:</strong></td>
-                                            <td>21th October 1998</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>Nationality:</strong></td>
-                                            <td>Indonesia</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <a href="{!!asset('homepage/resume/Resume-Bintang-Jeremia-Tobing-2020.pdf')!!}"
-                                    class="button button-large button-border button-black button-dark ml-0"><i
-                                        class="icon-line-cloud-download"></i> Download Resume</a>
+                        <div class="row align-items-end mb-5">
+                            <div class="col-lg-5 offset-lg-1">
+                                <h3 class="font-weight-bolder h1">The ways I can help you</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minima error ducimus
+                                    recusandae sed ipsam, cumque optio reiciendis nihil labore!</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="video-wrap">
-                        <div class="video-overlay d-sm-block d-md-none" style="background: rgba(255,255,255,0.9);">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="section m-0 skill-area bg-color dark" style="padding: 80px 0;">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <h4>Education</h4>
-                                <div class="skill-info">
-                                    <span>
-                                        System Information | Universitas Prima Indonesia<br>
-                                        Bachelor’s degree<br>
-                                        2019 – Present
-                                    </span>
-                                    <span>
-                                        Information Technology | SMK Negeri 1 Percut Sei Tuan<br>
-                                        High School<br>
-                                        2013 - 2016
-                                    </span>
+                        <div class="row gutter-50 mb-5 align-items-stretch">
+                            <div class="col-md-4">
+                                <div class="card d-flex align-items-end flex-column p-4 border-0"
+                                    style="background-color: #E2E8D8;">
+                                    <div class="mt-5"></div>
+                                    <div class="mt-auto">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-4">
+                                                <img src="{!!asset('homepage/freelancer/images/icons/sketch.svg')!!}"
+                                                    height="50" alt="Image">
+                                                <img src="{!!asset('homepage/freelancer/images/icons/xd.svg')!!}"
+                                                    height="50" alt="Image" class="ml-3">
+                                            </div>
+                                            <h3 class="card-title font-weight-bolder">Website Design</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
+                                                interoperable process improvements after team building testing
+                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="w-100 bottommargin d-block d-md-none"></div>
-
-                            <div class="col-lg-4 col-md-6">
-                                <h4>Experience</h4>
-                                <div class="skill-info">
-                                    <span>
-                                        Mar 2019 - Today<br>
-                                        Chief Technology Officer & Co-Founder<br>
-                                        Full Time Job<br>
-                                        Infinity Solutions | PT BENUA SOLUSI TEKNOLOGI
-                                    </span>
-                                    <span>
-                                        Sep 2018 - May 2019<br>
-                                        Full Stack Developer<br>
-                                        Full Time Job<br>
-                                        BTSA Logistics
-                                    </span>
-                                    <span>
-                                        Sep 2017 - Aug 2018<br>
-                                        Full Stack Developer<br>
-                                        Full Time Job<br>
-                                        PT Metro Interior Medan
-                                    </span>
-                                    <span>
-                                        Apr 2017 - Aug 2017<br>
-                                        IT Support & Full Stack Developer<br>
-                                        Full Time Job<br>
-                                        PT BPR NBP 18
-                                    </span>
+                            <div class="col-md-4">
+                                <div class="card d-flex align-items-end flex-column p-4 border-0"
+                                    style="background-color: #C2DFEC;">
+                                    <div class="mt-5"></div>
+                                    <div class="mt-auto">
+                                        <div class="card-body">
+                                            <img src="demos/seo/images/icons/social.svg')!!}" alt="Image" class="mb-4"
+                                                height="50">
+                                            <h3 class="card-title font-weight-bolder">Responsive Website</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
+                                                interoperable process improvements after team building testing
+                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="w-100 bottommargin d-block d-lg-none clear"></div>
-
-                            <div class="col-lg-4 col-12">
-                                <h4>Skills</h4>
-                                <ul class="skills">
-                                    <li data-percent="85">
-                                        <span>CSS3</span>
-                                        <div class="progress">
-                                            <div class="progress-percent">
-                                                <div class="counter counter-inherit counter-instant"><span data-from="0"
-                                                        data-to="85" data-refresh-interval="30"
-                                                        data-speed="1100"></span>%</div>
-                                            </div>
+                            <div class="col-md-4">
+                                <div class="card d-flex align-items-end flex-column p-4 border-0"
+                                    style="background-color: #FADCE4">
+                                    <div class="mt-5"></div>
+                                    <div class="mt-auto">
+                                        <div class="card-body">
+                                            <img src="{!!asset('homepage/freelancer/images/icons/wp.svg')!!}"
+                                                height="50" alt="Image" class="mb-4">
+                                            <h3 class="card-title font-weight-bolder">WordPress Website</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
+                                                interoperable process improvements after team building testing
+                                                procedures. Distinctively architect resource-leveling portals.</p>
                                         </div>
-                                    </li>
-                                    <li data-percent="90">
-                                        <span>HTML5</span>
-                                        <div class="progress">
-                                            <div class="progress-percent">
-                                                <div class="counter counter-inherit counter-instant"><span data-from="0"
-                                                        data-to="90" data-refresh-interval="30"
-                                                        data-speed="1100"></span>%</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li data-percent="70">
-                                        <span>jQuery</span>
-                                        <div class="progress">
-                                            <div class="progress-percent">
-                                                <div class="counter counter-inherit counter-instant"><span data-from="0"
-                                                        data-to="70" data-refresh-interval="30"
-                                                        data-speed="1100"></span>%</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li data-percent="87">
-                                        <span>Php</span>
-                                        <div class="progress">
-                                            <div class="progress-percent">
-                                                <div class="counter counter-inherit counter-instant"><span data-from="0"
-                                                        data-to="87" data-refresh-interval="30"
-                                                        data-speed="1100"></span>%</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li data-percent="85">
-                                        <span>Laravel</span>
-                                        <div class="progress">
-                                            <div class="progress-percent">
-                                                <div class="counter counter-inherit counter-instant"><span data-from="0"
-                                                        data-to="85" data-refresh-interval="30"
-                                                        data-speed="1100"></span>%</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
 
+                            <div class="col-md-4">
+                                <div class="card d-flex align-items-end flex-column p-4 border-0"
+                                    style="background-color: #E4E4E4">
+                                    <div class="mt-5"></div>
+                                    <div class="mt-auto">
+                                        <div class="card-body">
+                                            <img src="demos/seo/images/icons/seo.svg')!!}" height="50" alt="Image"
+                                                class="mb-4">
+                                            <h3 class="card-title font-weight-bolder">SEO Optimised</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
+                                                interoperable process improvements after team building testing
+                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-flex align-items-end flex-column p-4 border-0"
+                                    style="background-color: #E5E3CE;">
+                                    <div class="mt-5"></div>
+                                    <div class="mt-auto">
+                                        <div class="card-body">
+                                            <img src="{!!asset('homepage/freelancer/images/icons/hosting.svg')!!}"
+                                                height="50" alt="Image" class="mb-4">
+                                            <h3 class="card-title font-weight-bolder">Web Hosting</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
+                                                interoperable process improvements after team building testing
+                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card d-flex align-items-end flex-column p-4 border-0"
+                                    style="background-color: #C9D6CF">
+                                    <div class="mt-5"></div>
+                                    <div class="mt-auto">
+                                        <div class="card-body">
+                                            <img src="{!!asset('homepage/freelancer/images/icons/plugins.svg')!!}"
+                                                height="50" alt="Image" class="mb-4">
+                                            <h3 class="card-title font-weight-bolder">Plugin Development</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
+                                                interoperable process improvements after team building testing
+                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div id="section-works" class="section page-section m-0" style="background: #EEE url('{!!asset('homepage/media/resume/3.png')!!}') no-repeat center right;
-                    background-size: cover; padding: 100px 0">
-                    <div class="container">
-                        <div class="row">
+                    <div class="clear"></div>
+
+                    <div class="container mt-6">
+                        <div class="row align-items-end">
                             <div class="col-lg-6 offset-lg-1">
-                                <div class="heading-block">
-                                    <h2 class="font-secondary">Latest Works.</h2>
-                                    <span class="mt-0">This is my latest works on my projects.</span>
+                                <h3 class="font-weight-bolder h1">We value our relationships</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minima error ducimus
+                                    recusandae sed ipsam, cumque optio reiciendis nihil labore!</p>
+                            </div>
+                        </div>
+                        <div class="section rounded-10 p-6 my-4" style="background-color: #F1F1F1;">
+                            <div class="row justify-content-between align-items-center col-mb-50">
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/amazon.svg')!!}"
+                                        alt="Clients">
                                 </div>
-                                <div class="row clearfix">
-                                    <div class="col-md-6">
-                                        <ul class="niche-demos-lists mb-0 lists-1">
-                                            <li class="mt-0"><a href="https://euroupvc.co.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/euroupvc.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">UPVC Window & Doors</a>
-                                            </li>
-                                            <li><a href="https://movith.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/movith.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">TV Advertising</a></li>
-                                            <li><a href="https://infinitysolutions.co.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/infinity.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">IT Services</a></li>
-                                            <li><a href="https://btsa.co.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/btsa.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Logistics</a></li>
-                                            <li><a href="https://sarjanamalam.com" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/sarjanamalam.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Forum Online</a></li>
-                                            <li><a href="https://occulto.site" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/occulto.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Secret Message</a></li>
-                                            <li><a href="https://starwhisper.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/starwhisper.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Apparel Shop</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="niche-demos-lists mb-0 lists-1">
-                                            <li class="mt-0"><a href="/" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/bt.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Resume & Dev</a></li>
-                                            <li><a href="https://bprnbp18.co.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/nbp.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Banking</a></li>
-                                            <li><a href="https://pesthunter.co.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/plpestindo.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Fumigation</a></li>
-                                            <li><a href="http://sumaterabioenergi.com" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/sbeu.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Pallet & Industry</a></li>
-                                            <li><a href="https://sumberparts.com" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/shuiinterior.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Spareparts</a></li>
-                                            <li><a href="https://occulto.site" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/hkbp.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">Religious</a></li>
-                                            <li><a href="https://interiorrumahku.id" target="_blank"><img
-                                                        src="{!!asset('homepage/media/portfolio/interiorrumahku.png')!!}"
-                                                        alt="Bintang Tobing Latest Projects">House Interior</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/netflix.svg')!!}"
+                                        alt="Clients">
                                 </div>
-                                <a href="/work"
-                                    class="button button-large button-border button-black button-dark topmargin-sm ml-0"><i
-                                        class="icon-line-stack-2"></i> See More Works</a>
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/google.svg')!!}"
+                                        alt="Clients">
+                                </div>
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/paypal.svg')!!}"
+                                        alt="Clients">
+                                </div>
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/skype.svg')!!}" alt="Clients">
+                                </div>
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/ps.svg')!!}" alt="Clients">
+                                </div>
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/slack.svg')!!}" alt="Clients">
+                                </div>
+                                <div class="col-md-3 col-6 center"><img
+                                        src="{!!asset('homepage/freelancer/images/clients/applemusic.svg')!!}"
+                                        alt="Clients">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="video-wrap">
-                        <div class="video-overlay d-block d-xl-none" style="background: rgba(255,255,255,0.9);"></div>
-                    </div>
                 </div>
 
-            </div>
-        </section>
-        <footer id="footer" class="page-section dark border-0 p-0 clearfix" style="background-color: #1C1C1C;">
-            <div class="container clearfix">
-                <div class="footer-widgets-wrap clearfix" style="padding: 80px 0">
+                <div class="clear"></div>
 
-                    <div class="row col-mb-50">
-                        <div class="col-lg-3">
-                            <div class="footer-logo"><span class="font-weight-normal color ls1"
-                                    style="font-size: 22px; ">BintangTobing.</span><br><small class="ls3 text-uppercase"
-                                    style="color: rgba(255,255,255,0.2);">&copy; {{$to}} Reserved.</small></div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="row col-mb-50">
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="widget">
-                                        <h4>Contact Me</h4>
-                                        <div class="footer-content">
-                                            <abbr title="Phone Number"><strong>Phone:</strong></abbr> +62
-                                            81262845980<br>
-                                            <abbr title="Email Address"><strong>Email:</strong></abbr>
-                                            hello@bintangtobing.com
+                <div class="section m-0"
+                    style="background: #f1efe5 url('{!!asset('homepage/freelancer/images/bg.svg')!!}') no-repeat right center; padding-top: 240px">
+                    <div class="shape-divider" data-shape="wave-4" data-height="150" id="shape-divider-6017"><svg
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 140" preserveAspectRatio="none">
+                            <path class="shape-divider-fill" fill="#F8F7F2"
+                                d="M0 51.76c36.21-2.25 77.57-3.58 126.42-3.58 320 0 320 57 640 57 271.15 0 312.58-40.91 513.58-53.4V0H0z"
+                                opacity="0.3"></path>
+                            <path class="shape-divider-fill"
+                                d="M0 24.31c43.46-5.69 94.56-9.25 158.42-9.25 320 0 320 89.24 640 89.24 256.13 0 307.28-57.16 481.58-80V0H0z"
+                                opacity="0.5"></path>
+                            <path class="shape-divider-fill"
+                                d="M0 0v3.4C28.2 1.6 59.4.59 94.42.59c320 0 320 84.3 640 84.3 285 0 316.17-66.85 545.58-81.49V0z">
+                            </path>
+                        </svg></div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-5">
+                                <h3 class="font-weight-bolder h1 my-5">A few things clients<br>normally ask me</h3>
+                                <div class="accordion" data-collapsible="true">
+
+                                    <div class="accordion-header">
+                                        <div class="accordion-icon">
+                                            <i
+                                                class="accordion-closed icon-line-plus color gradient-text gradient-red-yellow"></i>
+                                            <i
+                                                class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
+                                        </div>
+                                        <div class="accordion-title">
+                                            Design &amp; Development Process
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="widget">
-                                        <h4>Social</h4>
-                                        <a href="/facebook"
-                                            class="social-icon bg-transparent si-small si-light si-facebook">
-                                            <i class="icon-facebook"></i>
-                                            <i class="icon-facebook"></i>
-                                        </a>
-                                        <a href="/instagram"
-                                            class="social-icon bg-transparent si-small si-light si-instagram">
-                                            <i class="icon-instagram"></i>
-                                            <i class="icon-instagram"></i>
-                                        </a>
-                                        <a href="/github"
-                                            class="social-icon bg-transparent si-small si-light si-github">
-                                            <i class="icon-github"></i>
-                                            <i class="icon-github"></i>
-                                        </a>
-                                        <a href="/linkedin"
-                                            class="social-icon bg-transparent si-small si-light si-linkedin">
-                                            <i class="icon-linkedin"></i>
-                                            <i class="icon-linkedin"></i>
-                                        </a>
+                                    <div class="accordion-content">Donec sed odio dui. Nulla vitae elit libero, a
+                                        pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
+                                        posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
+
+                                    <div class="accordion-header">
+                                        <div class="accordion-icon">
+                                            <i
+                                                class="accordion-closed icon-line-plus color gradient-text gradient-red-yellow"></i>
+                                            <i
+                                                class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
+                                        </div>
+                                        <div class="accordion-title">
+                                            What is Our Refund Policy
+                                        </div>
                                     </div>
+                                    <div class="accordion-content">Integer posuere erat a ante venenatis dapibus posuere
+                                        velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum
+                                        nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</div>
+
+                                    <div class="accordion-header" id="id-accordion-3">
+                                        <div class="accordion-icon">
+                                            <i
+                                                class="accordion-closed icon-line-plus color gradient-text gradient-red-yellow"></i>
+                                            <i
+                                                class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
+                                        </div>
+                                        <div class="accordion-title">
+                                            Our Processing Time
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content">Nullam id dolor id nibh ultricies vehicula ut id
+                                        elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis
+                                        mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.
+                                    </div>
+
+                                    <div class="accordion-header" id="id-accordion-4">
+                                        <div class="accordion-icon">
+                                            <i
+                                                class="accordion-closed icon-line-plus color gradient-text gradient-red-yellow"></i>
+                                            <i
+                                                class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
+                                        </div>
+                                        <div class="accordion-title">
+                                            How do I Pay and Payment Method
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content">Nullam id dolor id nibh ultricies vehicula ut id
+                                        elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis
+                                        mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.
+                                    </div>
+
                                 </div>
                             </div>
 
+                            <div class="col-lg-7">
+                                <img src="{!!asset('homepage/freelancer/images/ask.svg')!!}" alt="FAQs" class="px-5">
+                            </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <div id="copyrights" style="background-color: #111;">
-                <div class="container clearfix">
 
-                    <div class="w-100 text-center">
-                        <p class="mb-3">Copyrights &copy; 2020 All Rights Reserved by Bintang Tobing.</p>
+                <div class="clear"></div>
+
+            </div>
+
+        </section><!-- #content end -->
+
+        <!-- Footer
+		============================================= -->
+        <footer id="footer" class="border-0" style="background-color: #C9D6CF;">
+
+            <div class="container">
+                <div class="footer-widgets-wrap  m-0">
+
+                    <div class="row justify-content-between">
+
+                        <div class="col-md-4">
+                            <div class="widget">
+
+                                <h3 class="h1 mb-5">Got a Project?<br>Let's Talk!</h3>
+                                <span class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nobis quisquam aspernatur vero voluptas.</span>
+                                <a href="mailto:noreply@canvas.com"
+                                    class="h4 text-dark mt-5 mb-4 d-block"><u>noreply@canvas.com</u> <i
+                                        class="icon-line-arrow-right position-relative ml-2" style="top: 3px"></i></a>
+                                <div>
+                                    <a href="#" class="social-icon si-small si-colored si-facebook">
+                                        <i class="icon-facebook"></i>
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a href="#" class="social-icon si-small si-colored si-delicious">
+                                        <i class="icon-delicious"></i>
+                                        <i class="icon-delicious"></i>
+                                    </a>
+                                    <a href="#" class="social-icon si-small si-colored si-paypal">
+                                        <i class="icon-paypal"></i>
+                                        <i class="icon-paypal"></i>
+                                    </a>
+                                    <a href="#" class="social-icon si-small si-colored si-flattr">
+                                        <i class="icon-flattr"></i>
+                                        <i class="icon-flattr"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <h3 class="h1 mb-5">Estimate your Project?</h3>
+                            <div class="form-widget" data-loader="button" data-alert-type="inline">
+
+                                <div class="form-result"></div>
+
+                                <form class="row mb-0" id="landing-enquiry" action="include/form.php" method="post"
+                                    enctype="multipart/form-data">
+                                    <div class="form-process"></div>
+                                    <div class="col-12 form-group mb-4">
+                                        <label>What is Your Name:</label>
+                                        <input type="text" name="landing-enquiry-name" id="landing-enquiry-name"
+                                            class="form-control border-form-control required" value="">
+                                    </div>
+                                    <div class="col-12 form-group mb-4">
+                                        <label>Your Email Address Please:</label>
+                                        <input type="email" name="landing-enquiry-email" id="landing-enquiry-email"
+                                            class="form-control border-form-control required" value="">
+                                    </div>
+                                    <div class="col-12 form-group mb-4">
+                                        <label>Tell more about your Project:</label>
+                                        <textarea name="landing-enquiry-additional-requirements"
+                                            id="landing-enquiry-additional-requirements"
+                                            class="form-control border-form-control" cols="10" rows="3"></textarea>
+                                    </div>
+                                    <div class="col-12 d-none">
+                                        <input type="text" id="landing-enquiry-botcheck" name="landing-enquiry-botcheck"
+                                            value="" />
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" name="landing-enquiry-submit"
+                                            class="button h-translatey-3 bg-dark rounded-pill"><i
+                                                class="icon-line-arrow-right m-0"></i></button>
+                                    </div>
+
+                                    <input type="hidden" name="prefix" value="landing-enquiry-">
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
             </div>
-        </footer>
-    </div>
-    <div id="gotoTop" class="icon-angle-up"></div>
+
+        </footer><!-- #footer end -->
+
+    </div><!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="icon-double-angle-up bg-white text-dark rounded-circle shadow"></div>
+
+    <!-- External JavaScripts
+	============================================= -->
     <script src="{!!asset('homepage/js/jquery.js')!!}"></script>
     <script src="{!!asset('homepage/js/plugins.min.js')!!}"></script>
+
+    <!-- Footer Scripts
+	============================================= -->
     <script src="{!!asset('homepage/js/functions.js')!!}"></script>
 
     <script>
-        jQuery(window).scroll(function () {
-            var pixs = jQuery(window).scrollTop(),
-                opacity = pixs / 650,
-                element = jQuery('.blurred-img'),
-                elementHeight = element.outerHeight(),
-                elementNextHeight = jQuery('.content-wrap').find('.page-section').first().outerHeight();
-            if ((elementHeight + elementNextHeight + 50) > pixs) {
-                element.addClass('blurred-image-visible');
-                element.css({
-                    'opacity': opacity
-                });
-            } else {
-                element.removeClass('blurred-image-visible');
-            }
+        // Owl Carousel Scripts
+        jQuery(window).on('pluginCarouselReady', function () {
+            $('#oc-services').owlCarousel({
+                items: 1,
+                margin: 30,
+                nav: false,
+                dots: true,
+                smartSpeed: 400,
+                responsive: {
+                    576: {
+                        stagePadding: 30,
+                        items: 1
+                    },
+                    768: {
+                        stagePadding: 30,
+                        items: 2
+                    },
+                    991: {
+                        stagePadding: 150,
+                        items: 3
+                    },
+                    1200: {
+                        stagePadding: 150,
+                        items: 3
+                    }
+                },
+            });
         });
     </script>
 
