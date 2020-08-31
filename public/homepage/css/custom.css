@@ -1,0 +1,10 @@
+#logo a {
+    color: #000;
+    text-shadow: none;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+#logo .ls3 {
+    letter-spacing: .25px !important;
+}
