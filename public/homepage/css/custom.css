@@ -1,0 +1,16 @@
+#clientssec img {
+   filter: grayscale(100%);
+}
+
+#clientssec img:hover {
+   filter: grayscale(0);
+}
+
+#clientssec .col-md-3,
+#clientssec .col-6 {
+   padding: 0 0 !important;
+}
+
+#paymentimg img {
+   width: 60px;
+}

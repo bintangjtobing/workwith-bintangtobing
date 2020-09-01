@@ -34,29 +34,29 @@
     {{-- META CONTENT --}}
     <meta name="title" content="Work with Bintang Tobing.">
     <meta name="keywords"
-        content="Bintang Tobing, Web Developer, Freelance, Jasa Bintang Tobing, Bintang, BintangTobing, designer, web Bintang, bintangtobing, resume bintang tobing, cv bintang tobing, curicullum vitae bintang tobing">
-    <meta name="description"
-        content="Hi I'm Bintang Tobing, you can call me Bin. As you can see, yes this is my personal page for my resume, curicullum vitae, also you can see my projects.">
+        content="buat website murah, buat website medan, website medan, bintangtobing, resume bintang tobing, cv bintang tobing, curicullum vitae bintang tobing">
+    <meta name="description" content="Hi! I'm Bintang Tobing, and you are definitely someone who wants to increase business turnover with a
+        digital strategy, right? You are in the right person! Let's see what you can got from me.">
     <meta name="author" content="Bintang Jeremia Tobing">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
 
     {{-- SOCIAL MEDIA TAGS --}}
     {{-- FACEBOOK SOCMED --}}
-    <meta property="fb:admins" content="111044563749542">
+    <meta property="fb:admins" content="110503303892737">
     <meta property="og:title" content="Work with Bintang Tobing.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{URL::current()}}">
     <meta property="og:image" content="{!!asset('storage/img/cover.jpg')!!}">
-    <meta property="og:description"
-        content="Hi I'm Bintang Tobing, you can call me Bin. As you can see, yes this is my personal page for my resume, curicullum vitae, also you can see my projects.">
+    <meta property="og:description" content="Hi! I'm Bintang Tobing, and you are definitely someone who wants to increase business turnover with a
+        digital strategy, right? You are in the right person! Let's see what you can got from me.">
     <meta property="og:site_name" content="Bintang Tobing.">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{URL::current()}}">
     <meta property="twitter:title" content="Work with Bintang Tobing.">
-    <meta property="twitter:description" content="Hi I'm Bintang Tobing, you can call me Bin. As you can see, yes this is my personal page for my resume,
-        curicullum vitae, also you can see my projects.">
+    <meta property="twitter:description" content="Hi! I'm Bintang Tobing, and you are definitely someone who wants to increase business turnover with a
+        digital strategy, right? You are in the right person! Let's see what you can got from me.">
     <meta property="twitter:image" content="https://bintangtobing.com/storage/img/cover.jpg">
 
 </head>
@@ -91,7 +91,7 @@
                                     alt="Workwith Bintang Logo"></a>
                         </div>
                         <div class="header-misc">
-                            <a href="#" class="button button-border rounded-pill">Email Us</a>
+                            <a href="#" class="button button-border rounded-pill">Email Me</a>
                         </div>
 
                         <div id="primary-menu-trigger">
@@ -188,8 +188,8 @@
                             data-bottom-top="width: 40vw" data-center-top="width: 100vw;">
                             <div class="row align-items-center justify-content-center h-100">
                                 <div class="col-auto text-center">
-                                    <a href="/github"
-                                        class="display-4 font-weight-bolder text-white d-inline-block mx-4 h-op-08 op-ts"><u>#github</u></a>
+                                    <a href="/linkedin"
+                                        class="display-4 font-weight-bolder text-white d-inline-block mx-4 h-op-08 op-ts"><u>#linkedin</u></a>
                                     <a href="/instagram"
                                         class="display-4 font-weight-bolder text-white d-inline-block mx-4 h-op-08 op-ts"><u>#instagram</u></a>
                                 </div>
@@ -528,42 +528,84 @@
                     <div class="container mt-6">
                         <div class="row align-items-end">
                             <div class="col-lg-6 offset-lg-1">
-                                <h3 class="font-weight-bolder h1">Always value our relationships</h3>
+                                <h3 class="font-weight-bolder h1">Always value our relationships 😉</h3>
                                 <p>It was never just a client-developer, but now we always create a circle of symbiosis
                                     of mutualism, we really respect each other.</p>
                             </div>
                         </div>
                         <div class="section rounded-10 p-6 my-4" style="background-color: #F1F1F1;">
-                            <div class="row justify-content-between align-items-center col-mb-50">
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/amazon.svg')!!}"
-                                        alt="Clients">
-                                </div>
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/netflix.svg')!!}"
-                                        alt="Clients">
-                                </div>
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/google.svg')!!}"
-                                        alt="Clients">
-                                </div>
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/paypal.svg')!!}"
-                                        alt="Clients">
-                                </div>
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/skype.svg')!!}" alt="Clients">
-                                </div>
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/ps.svg')!!}" alt="Clients">
-                                </div>
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/slack.svg')!!}" alt="Clients">
-                                </div>
-                                <div class="col-md-3 col-6 center"><img
-                                        src="{!!asset('homepage/freelancer/images/clients/applemusic.svg')!!}"
-                                        alt="Clients">
-                                </div>
+                            <div id="clientssec" class="row justify-content-between align-items-center col-mb-50">
+                                <ul class="clients-grid grid-2 grid-sm-3 grid-md-6 mb-0">
+                                    <li class="grid-item"><a href="https://occulto.site" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/occulto.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="https://btsa.co.id" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/btsa.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="https://euroupvc.co.id" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/euroupvc.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="http://hkbpglugurmedan.org" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/hkbpglugur.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="#"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/indotech.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="http://interiorrumahku.id" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/interior.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="https://movith.id" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/movith.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="#"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/portahost.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="https://sajanamalam.com" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/sarjanamalam.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="https://starwhisper.id" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/starwhisper.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="#"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/whallen.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="http://bprnbp18.co.id" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/nbp.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="#"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/amkm.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="#"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/originalnest.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="https://pesthunter.co.id" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/plpestindo.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                    <li class="grid-item"><a href="https://shui-interior.com" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/shuiinterior.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+
+                                    <li class="grid-item"><a href="https://sumberparts.com" target="_blank"><img
+                                                src="{!!asset('homepage/freelancer/images/clients/sumberdiesel.png')!!}"
+                                                alt="Bintang Tobing's Clients"></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -571,7 +613,7 @@
 
                 <div class="clear"></div>
 
-                <div class="section m-0"
+                <div class="section m-0" id="faq"
                     style="background: #f1efe5 url('{!!asset('homepage/freelancer/images/bg.svg')!!}') no-repeat right center; padding-top: 240px">
                     <div class="shape-divider" data-shape="wave-4" data-height="150" id="shape-divider-6017"><svg
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 140" preserveAspectRatio="none">
@@ -599,27 +641,16 @@
                                                 class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
                                         </div>
                                         <div class="accordion-title">
-                                            Design &amp; Development Process
-                                        </div>
-                                    </div>
-                                    <div class="accordion-content">Donec sed odio dui. Nulla vitae elit libero, a
-                                        pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
-                                        posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
-
-                                    <div class="accordion-header">
-                                        <div class="accordion-icon">
-                                            <i
-                                                class="accordion-closed icon-line-plus color gradient-text gradient-red-yellow"></i>
-                                            <i
-                                                class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
-                                        </div>
-                                        <div class="accordion-title">
                                             What is Our Refund Policy
                                         </div>
                                     </div>
-                                    <div class="accordion-content">Integer posuere erat a ante venenatis dapibus posuere
-                                        velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum
-                                        nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</div>
+                                    <div class="accordion-content">Don't be afraid of the results, because I guarantee
+                                        money back if you are not satisfied. For that I created my work system, namely a
+                                        win-win solution. First, I started work (design & development process), and
+                                        <span style="background-color:#fddf7e; ">if
+                                            you are satisfied with the initial design results and the process you can
+                                            pay
+                                            the initial bill to continue the project.</span></div>
 
                                     <div class="accordion-header" id="id-accordion-3">
                                         <div class="accordion-icon">
@@ -629,12 +660,34 @@
                                                 class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
                                         </div>
                                         <div class="accordion-title">
-                                            Our Processing Time
+                                            My Processing Time
                                         </div>
                                     </div>
-                                    <div class="accordion-content">Nullam id dolor id nibh ultricies vehicula ut id
-                                        elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis
-                                        mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.
+                                    <div class="accordion-content">The speed of my work process depends on your response
+                                        in this matter. <span style="background-color:#fddf7e; ">When you quickly
+                                            provide the necessary data for this project, at
+                                            least 14 working days</span> you will get the results specified in the
+                                        initial
+                                        conditions. If the condition is unresponsive, it may take 30 working days.
+                                        Everything is related.
+                                    </div>
+
+                                    <div class="accordion-header">
+                                        <div class="accordion-icon">
+                                            <i
+                                                class="accordion-closed icon-line-plus color gradient-text gradient-red-yellow"></i>
+                                            <i
+                                                class="accordion-open icon-line-minus color gradient-text gradient-red-yellow"></i>
+                                        </div>
+                                        <div class="accordion-title">
+                                            Design &amp; Development Process
+                                        </div>
+                                    </div>
+                                    <div class="accordion-content">Usually I collect data first, conclude what the
+                                        target client is, and provide some system suggestions and site design that might
+                                        be suitable for the client. <span style="background-color: #fddf7e;">And when
+                                            everything fits, I usually design the site
+                                            sketch and design the flowchart and database</span> for the client first.
                                     </div>
 
                                     <div class="accordion-header" id="id-accordion-4">
@@ -648,16 +701,45 @@
                                             How do I Pay and Payment Method
                                         </div>
                                     </div>
-                                    <div class="accordion-content">Nullam id dolor id nibh ultricies vehicula ut id
-                                        elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis
-                                        mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.
+                                    <div class="accordion-content">You don't need to be difficult when it comes to
+                                        payments, you can pay me via electronic payments at this time. You can pay via
+                                        OVO, Go-Pay, Dana, PayPal, Jenius and you can also pay via bank transfer at Bank
+                                        BCA, Bank Mestika, and Bank Panin.
+
+                                        <div class="row" id="paymentimg">
+                                            <div class="col-lg-6">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/bank-transfer.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/bca.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/panin.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/mestika.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/ovo.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/gopay.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/dana.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/paypal.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/linkaja.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                                <img src="{!!asset('homepage/freelancer/images/payment/jenius.png')!!}"
+                                                    alt="Payment Method FAQ WorkWith Bintang Tobing">
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
                             </div>
 
                             <div class="col-lg-7">
-                                <img src="{!!asset('homepage/freelancer/images/ask.svg')!!}" alt="FAQs" class="px-5">
+                                <img src="{!!asset('homepage/freelancer/images/ask.svg')!!}" alt="FAQs Bintang Tobing"
+                                    class="px-5">
                             </div>
                         </div>
                     </div>
@@ -682,27 +764,28 @@
                             <div class="widget">
 
                                 <h3 class="h1 mb-5">Got a Project?<br>Let's Talk!</h3>
-                                <span class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nobis quisquam aspernatur vero voluptas.</span>
-                                <a href="mailto:noreply@canvas.com"
-                                    class="h4 text-dark mt-5 mb-4 d-block"><u>noreply@canvas.com</u> <i
+                                <span class="text-black-50">You are in the right place. Come on, what else? Accelerate
+                                    the development of your business venture with me. I guarantee you to manage for
+                                    life.</span>
+                                <a href="mailto:hello@bintangtobing.com"
+                                    class="h4 text-dark mt-5 mb-4 d-block"><u>hello@bintangtobing.com</u> <i
                                         class="icon-line-arrow-right position-relative ml-2" style="top: 3px"></i></a>
                                 <div>
-                                    <a href="#" class="social-icon si-small si-colored si-facebook">
+                                    <a href="/facebook" class="social-icon si-small si-colored si-facebook">
                                         <i class="icon-facebook"></i>
                                         <i class="icon-facebook"></i>
                                     </a>
-                                    <a href="#" class="social-icon si-small si-colored si-delicious">
-                                        <i class="icon-delicious"></i>
-                                        <i class="icon-delicious"></i>
+                                    <a href="/instagram" class="social-icon si-small si-colored si-instagram">
+                                        <i class="icon-instagram"></i>
+                                        <i class="icon-instagram"></i>
                                     </a>
-                                    <a href="#" class="social-icon si-small si-colored si-paypal">
-                                        <i class="icon-paypal"></i>
-                                        <i class="icon-paypal"></i>
+                                    <a href="/linkedin" class="social-icon si-small si-colored si-linkedin">
+                                        <i class="icon-linkedin"></i>
+                                        <i class="icon-linkedin"></i>
                                     </a>
-                                    <a href="#" class="social-icon si-small si-colored si-flattr">
-                                        <i class="icon-flattr"></i>
-                                        <i class="icon-flattr"></i>
+                                    <a href="/github" class="social-icon si-small si-colored si-github">
+                                        <i class="icon-github"></i>
+                                        <i class="icon-github"></i>
                                     </a>
                                 </div>
 
@@ -754,21 +837,11 @@
                 </div>
             </div>
 
-        </footer><!-- #footer end -->
-
-    </div><!-- #wrapper end -->
-
-    <!-- Go To Top
-	============================================= -->
+        </footer>
+    </div>
     <div id="gotoTop" class="icon-double-angle-up bg-white text-dark rounded-circle shadow"></div>
-
-    <!-- External JavaScripts
-	============================================= -->
     <script src="{!!asset('homepage/js/jquery.js')!!}"></script>
     <script src="{!!asset('homepage/js/plugins.min.js')!!}"></script>
-
-    <!-- Footer Scripts
-	============================================= -->
     <script src="{!!asset('homepage/js/functions.js')!!}"></script>
 
     <script>

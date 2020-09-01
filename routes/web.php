@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Redirect;
 Route::get('/', function () {
     return view('new');
 });
+Route::get('/id', function () {
+    return view('id');
+});
 Route::get('/youtube', function () {
     return Redirect::to('http://www.youtube.com/c/BintangJeremiaTobing');
 });
