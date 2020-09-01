@@ -93,26 +93,26 @@
                   </div>
                   <div class="row">
                      @if(!$project->isEmpty())
-                     @foreach ($project as $project)
+                     @foreach ($project as $projects)
                      <div class="col-md-6 my-3">
                         <div class="card">
                            <div class="card-header">
-                              <img src="{!!asset('homepage/freelancer/images/works/'.$project->file)!!}" alt="">
+                              <img src="{!!asset('homepage/freelancer/images/works/'.$projects->file)!!}" alt="">
                            </div>
                            <div class="card-body">
-                              <h4 class="card-title">{{$project->project_name}}</h4>
-                              <p class="card-text">{{$project->category}}</p>
+                              <h4 class="card-title">{{$projects->project_name}}</h4>
+                              <p class="card-text">{{$projects->category}}</p>
                            </div>
                         </div>
                      </div>
                      @endforeach
+
                      <div class="row">
                         <div class="col-md-6">
                            <ul class="pagination pagination-transparent pagination-circle">
                               <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span
                                        aria-hidden="true">&laquo;</span></a></li>
-
-                              <li class="page-item"><a class="page-link" href="#"></a></li>
+                              <li class="page-item"><a class="page-link" href="#">{{$project->links()}}</a></li>
                               <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span
                                        aria-hidden="true">&raquo;</span></a></li>
                            </ul>
