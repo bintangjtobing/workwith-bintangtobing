@@ -148,7 +148,7 @@
                                 for you.</p>
                             <a href="#"
                                 class="button button-dark button-hero h-translatey-3 tf-ts button-reveal overflow-visible bg-dark text-right"><span>View
-                                    our Works</span><i class="icon-line-arrow-right"></i></a>
+                                    my Works</span><i class="icon-line-arrow-right"></i></a>
                             <a href="#" class="button button-large button-light text-dark bg-transparent m-0"><i
                                     class="icon-line2-arrow-down font-weight-bold"></i> <u>Contact Me</u></a>
                         </div>
@@ -430,113 +430,92 @@
                         <div class="row align-items-end mb-5">
                             <div class="col-lg-5 offset-lg-1">
                                 <h3 class="font-weight-bolder h1">The ways I can help you</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minima error ducimus
-                                    recusandae sed ipsam, cumque optio reiciendis nihil labore!</p>
+                                <p>Not only doing a projects but also i can help you in many ways. Go check it!</p>
                             </div>
                         </div>
 
                         <div class="row gutter-50 mb-5 align-items-stretch">
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="card d-flex align-items-end flex-column p-4 border-0"
-                                    style="background-color: #E2E8D8;">
+                                    style="background-color: #e4e4e4;">
                                     <div class="mt-5"></div>
                                     <div class="mt-auto">
                                         <div class="card-body">
                                             <div class="d-flex align-items-center mb-4">
-                                                <img src="{!!asset('homepage/freelancer/images/icons/sketch.svg')!!}"
-                                                    height="50" alt="Image">
-                                                <img src="{!!asset('homepage/freelancer/images/icons/xd.svg')!!}"
-                                                    height="50" alt="Image" class="ml-3">
+                                                <img src="{!!asset('homepage/freelancer/images/icons/icons8-google_code.png')!!}"
+                                                    height="50" alt="Bintang Tobing's Offers">
+                                                <img src="{!!asset('homepage/freelancer/images/icons/icons8-web.png')!!}"
+                                                    height="50" alt="Bintang Tobing's Offers" class="ml-3">
                                             </div>
-                                            <h3 class="card-title font-weight-bolder">Website Design</h3>
-                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
-                                                interoperable process improvements after team building testing
-                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                            <h3 class="card-title font-weight-bolder">Website Development & Design</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">This is the main point of
+                                                what I am offering here. 85% who come to me are those who want to
+                                                increase their turnover from a website marketing strategy. A dynamic,
+                                                integrated and responsive website is essential in business.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="card d-flex align-items-end flex-column p-4 border-0"
                                     style="background-color: #C2DFEC;">
                                     <div class="mt-5"></div>
                                     <div class="mt-auto">
                                         <div class="card-body">
-                                            <img src="demos/seo/images/icons/social.svg')!!}" alt="Image" class="mb-4"
-                                                height="50">
-                                            <h3 class="card-title font-weight-bolder">Responsive Website</h3>
-                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
-                                                interoperable process improvements after team building testing
-                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                            <img src="{!!asset('homepage/freelancer/images/icons/icons8-design.png')!!}"
+                                                alt="Bintang Tobing's Offers" class="mb-4" height="50">
+                                            <h3 class="card-title font-weight-bolder">Logo & Company Needs Design</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">I know that the design
+                                                factor is also needed in the area of ​​your digital marketing strategy
+                                                and branding strategy. For that I can serve you in planning the right
+                                                design for your business venture. Starting from logo design, business
+                                                cards, brochures, and others.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
-                                <div class="card d-flex align-items-end flex-column p-4 border-0"
-                                    style="background-color: #FADCE4">
-                                    <div class="mt-5"></div>
-                                    <div class="mt-auto">
-                                        <div class="card-body">
-                                            <img src="{!!asset('homepage/freelancer/images/icons/wp.svg')!!}"
-                                                height="50" alt="Image" class="mb-4">
-                                            <h3 class="card-title font-weight-bolder">WordPress Website</h3>
-                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
-                                                interoperable process improvements after team building testing
-                                                procedures. Distinctively architect resource-leveling portals.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="card d-flex align-items-end flex-column p-4 border-0"
                                     style="background-color: #E4E4E4">
                                     <div class="mt-5"></div>
                                     <div class="mt-auto">
                                         <div class="card-body">
-                                            <img src="demos/seo/images/icons/seo.svg')!!}" height="50" alt="Image"
-                                                class="mb-4">
-                                            <h3 class="card-title font-weight-bolder">SEO Optimised</h3>
-                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
-                                                interoperable process improvements after team building testing
-                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                            <img src="{!!asset('homepage/freelancer/images/icons/icons8-launch.png')!!}"
+                                                height="50" alt="Bintang Tobing's Offers" class="mb-4">
+                                            <h3 class="card-title font-weight-bolder">SEO (Search Engine
+                                                Optimation)</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">SEO optimization is the
+                                                number 2 important thing after you create your own business website.
+                                                Building a business without anyone recognizing you in the environment
+                                                itself is futile. For this reason, SEO is needed to increase the name of
+                                                the site branding in the digital world.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-4">
+                            <div class="col-md-6">
                                 <div class="card d-flex align-items-end flex-column p-4 border-0"
                                     style="background-color: #E5E3CE;">
                                     <div class="mt-5"></div>
                                     <div class="mt-auto">
                                         <div class="card-body">
+                                            <img src="{!!asset('homepage/freelancer/images/icons/icons8-domain_name.png')!!}"
+                                                height="50" alt="Bintang Tobing's Offers" class="mb-4">
                                             <img src="{!!asset('homepage/freelancer/images/icons/hosting.svg')!!}"
-                                                height="50" alt="Image" class="mb-4">
-                                            <h3 class="card-title font-weight-bolder">Web Hosting</h3>
-                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
-                                                interoperable process improvements after team building testing
-                                                procedures. Distinctively architect resource-leveling portals.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card d-flex align-items-end flex-column p-4 border-0"
-                                    style="background-color: #C9D6CF">
-                                    <div class="mt-5"></div>
-                                    <div class="mt-auto">
-                                        <div class="card-body">
-                                            <img src="{!!asset('homepage/freelancer/images/icons/plugins.svg')!!}"
-                                                height="50" alt="Image" class="mb-4">
-                                            <h3 class="card-title font-weight-bolder">Plugin Development</h3>
-                                            <p class="card-text mb-0 mt-2 font-weight-light">Objectively productivate
-                                                interoperable process improvements after team building testing
-                                                procedures. Distinctively architect resource-leveling portals.</p>
+                                                height="50" alt="Bintang Tobing's Offers" class="mb-4">
+                                            <h3 class="card-title font-weight-bolder">Domain & Web Hosting</h3>
+                                            <p class="card-text mb-0 mt-2 font-weight-light">When your website is ready
+                                                for publication, you will definitely need a global name and place so
+                                                that other people can view the website publicly. Don't worry because I
+                                                have a service where you can choose the right domain and cloud-based
+                                                storage for your website. <br><a href="#"
+                                                    class="button button-rounded button-reveal button-small button-yellow button-light text-right"><span>Search
+                                                        your domain here
+                                                    </span></a>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -549,9 +528,9 @@
                     <div class="container mt-6">
                         <div class="row align-items-end">
                             <div class="col-lg-6 offset-lg-1">
-                                <h3 class="font-weight-bolder h1">We value our relationships</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minima error ducimus
-                                    recusandae sed ipsam, cumque optio reiciendis nihil labore!</p>
+                                <h3 class="font-weight-bolder h1">Always value our relationships</h3>
+                                <p>It was never just a client-developer, but now we always create a circle of symbiosis
+                                    of mutualism, we really respect each other.</p>
                             </div>
                         </div>
                         <div class="section rounded-10 p-6 my-4" style="background-color: #F1F1F1;">
