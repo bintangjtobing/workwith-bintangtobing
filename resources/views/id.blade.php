@@ -12,7 +12,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="shortcut icon" href="{!!asset('storage/img/icon-64x.png')!!}')!!}" alt="icon Bintang Tobing">
-   <!-- Title --> 
+   <!-- Title -->
    <title>Work with | Bintang Tobing.</title>
    <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700,900|Playfair+Display:400,700&display=swap"
@@ -78,44 +78,19 @@
 
 <body class="stretched">
    <div id="wrapper" class="clearfix">
-      <header id="header" class="border-bottom-0 no-sticky transparent-header">
+      <header id="header" class="border-bottom-0 sticky transparent-header">
          <div id="header-wrap">
             <div class="container">
                <div class="header-row">
                   <div id="logo">
-                     <a href="demo-freelancer.html" class="standard-logo"><img
-                           src="{!!asset('homepage/freelancer/images/logo.png')!!}" alt="Workwith Bintang Logo"></a>
-                     <a href="demo-freelancer.html" class="retina-logo"><img
-                           src="{!!asset('homepage/freelancer/images/logo@2x.png')!!}" alt="Workwith Bintang Logo"></a>
+                     <a href="/" class="standard-logo"><img src="{!!asset('homepage/freelancer/images/logo.png')!!}"
+                           alt="Workwith Bintang Logo"></a>
+                     <a href="/" class="retina-logo"><img src="{!!asset('homepage/freelancer/images/logo@2x.png')!!}"
+                           alt="Workwith Bintang Logo"></a>
                   </div>
                   <div class="header-misc">
                      <a href="#" class="button button-border rounded-pill">Email Saya</a>
                   </div>
-
-                  <div id="primary-menu-trigger">
-                     <svg class="svg-trigger" viewBox="0 0 100 100">
-                        <path
-                           d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20">
-                        </path>
-                        <path d="m 30,50 h 40"></path>
-                        <path
-                           d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20">
-                        </path>
-                     </svg>
-                  </div>
-                  <nav class="primary-menu">
-                     <ul class="menu-container">
-                        <li class="menu-item"><a class="menu-link" href="#">
-                              <div>Tentang saya</div>
-                           </a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">
-                              <div>Projek selesai</div>
-                           </a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">
-                              <div>Hubungi</div>
-                           </a></li>
-                     </ul>
-                  </nav>
                </div>
             </div>
          </div>
@@ -138,29 +113,23 @@
                         </span>
                      </h1>
                   </div>
-
                   <div class="mx-auto" style="max-width: 600px">
                      <p class="lead font-weight-normal text-dark mb-5">Tidak hanya menyelesaikan tugas dan proyek Anda,
                         tetapi juga bertanggung jawab atas apa yang saya lakukan adalah prioritas bagi saya. Jangan
                         khawatir dengan perkembangan bisnis Anda, di dunia digital ini saya akan memberikan solusi
                         terbaik untuk Anda.</p>
-                     <a href="#"
+                     <a href="/projects-done"
                         class="button button-dark button-hero h-translatey-3 tf-ts button-reveal overflow-visible bg-dark text-right"><span>Lihat
-                           Projek Saya</span><i class="icon-line-arrow-right"></i></a>
-                     <a href="#" class="button button-large button-light text-dark bg-transparent m-0"><i
+                           proyek Saya</span><i class="icon-line-arrow-right"></i></a>
+                     <a href="#footer" class="button button-large button-light text-dark bg-transparent m-0"><i
                            class="icon-line2-arrow-down font-weight-bold"></i> <u>Hubungi Saya</u></a>
                   </div>
                </div>
             </div>
          </div>
-      </section><!-- #slider end -->
-
-      <!-- Content
-		============================================= -->
+      </section>
       <section id="content">
-
          <div class="content-wrap p-0">
-
             <div class="section mb-0 pt-3 pb-0"
                style="background-color: #F4F4F4; margin-top: 150px; overflow: visible;">
                <div class="shape-divider" data-shape="wave" data-height="150" data-outside="true"
@@ -213,14 +182,14 @@
                      <div class="d-flex align-items-center justify-content-center">
                         <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="4"
                               data-to="85" data-refresh-interval="50" data-speed="1500"></span></div>
-                        <span>% projek yang telah selesai.</span>
+                        <span>% proyek yang telah selesai.</span>
                      </div>
                   </div>
                   <div class="col-md-3">
                      <div class="d-flex align-items-center justify-content-center">
                         <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="4"
                               data-to="10" data-refresh-interval="50" data-speed="1500"></span></div>
-                        <span>dari 14 projek telah di publikasikan.</span>
+                        <span>dari 14 proyek telah di publikasikan.</span>
                      </div>
                   </div>
 
@@ -316,15 +285,15 @@
                   <div class="row align-items-end justify-content-between mb-5">
                      <div class="col-lg-5 offset-lg-1">
                         <div>
-                           <h3 class="font-weight-bolder h1 mb-4">Projek Kreatif Terakhir<br>and Projek Terpilih</h3>
-                           <p class="lead mb-0">Yang tampil disini adalah projek kreatif terakhir dan yang terbesar yang
+                           <h3 class="font-weight-bolder h1 mb-4">proyek Kreatif Terakhir<br>and proyek Terpilih</h3>
+                           <p class="lead mb-0">Yang tampil disini adalah proyek kreatif terakhir dan yang terbesar yang
                               pernah saya buat.
                            </p>
                         </div>
                      </div>
                      <div class="col-auto">
-                        <a href="#" class="button button-dark button-border rounded-pill">Lihat semua projek <i
-                              class="icon-line-arrow-right"></i></a>
+                        <a href="/projects-done" class="button button-dark button-border rounded-pill">Lihat semua
+                           proyek <i class="icon-line-arrow-right"></i></a>
                      </div>
                   </div>
 
@@ -737,10 +706,8 @@
 
          </div>
 
-      </section><!-- #content end -->
+      </section>
 
-      <!-- Footer
-		============================================= -->
       <footer id="footer" class="border-0" style="background-color: #C9D6CF;">
 
          <div class="container">
@@ -751,10 +718,11 @@
                   <div class="col-md-4">
                      <div class="widget">
 
-                        <h3 class="h1 mb-5">Got a Project?<br>Let's Talk!</h3>
+                        <h3 class="h1 mb-5">Ada Proyek?<br>Let's Talk!</h3>
                         <span class="text-black-50">You are in the right place. Come on, what else? Accelerate
                            the development of your business venture with me. I guarantee you to manage for
-                           life.</span>
+                           life. <br><br>
+                           <a href="/">English</a> | <a href="/id">Indonesia</a></span>
                         <a href="mailto:hello@bintangtobing.com"
                            class="h4 text-dark mt-5 mb-4 d-block"><u>hello@bintangtobing.com</u> <i
                               class="icon-line-arrow-right position-relative ml-2" style="top: 3px"></i></a>

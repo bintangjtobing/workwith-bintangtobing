@@ -13,13 +13,26 @@
 
 use App\Mail\kembangkanlahMail;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\DB;
 
 Route::get('/', function () {
-    return view('new');
+    $project = DB::table('projectdbs')
+        ->orderBy('projectdbs.created_at', 'DESC')
+        ->limit(4)
+        ->get();
+    return view('homepage.index', ['project' => $project]);
 });
 Route::get('/id', function () {
     return view('id');
 });
+Route::get('/projects-done', function () {
+    $project = DB::table('projectdbs')
+        ->orderBy('projectdbs.created_at', 'DESC')
+        ->get();
+    return view('homepage.projects', ['project' => $project]);
+});
+
+
 Route::get('/youtube', function () {
     return Redirect::to('http://www.youtube.com/c/BintangJeremiaTobing');
 });
@@ -40,4 +53,20 @@ Route::get('/github', function () {
 });
 Route::get('/facebook', function () {
     return Redirect::to('https://facebook.com/bintangjtobing');
+});
+
+
+// Rahasia Administrator
+Route::prefix('secret')->group(function () {
+    Route::get('/', 'DashboardController@loginshow')->name('login.show');
+    Route::post('/', 'DashboardController@loginproses')->name('login.proses');
+});
+
+Route::group(['prefix' => 'admin', 'middleware' => 'isLogin'], function () {
+    Route::get('/dashboard', 'DashboardController@index');
+    Route::post('/addproject', 'DashboardController@addproject');
+});
+Route::get('logout', function () {
+    session()->flush();
+    return redirect('/secret');
 });
