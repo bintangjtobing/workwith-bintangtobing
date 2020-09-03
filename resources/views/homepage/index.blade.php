@@ -76,9 +76,14 @@
       <div class="container" style="max-width: 1000px">
          <div class="row col-mb-30 mt-5">
             <div class="col-md-3">
+               <?php
+               $from = 2015;
+               $to = Date('Y');
+               $res = $to-$from;
+               ?>
                <div class="d-flex align-items-center justify-content-center">
-                  <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="1" data-to="4"
-                        data-refresh-interval="2" data-speed="600"></span></div>
+                  <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="1"
+                        data-to="{{$res}}" data-refresh-interval="2" data-speed="600"></span></div>
                   <span>+ Years Of<br>Experience.</span>
                </div>
             </div>

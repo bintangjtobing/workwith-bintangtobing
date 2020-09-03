@@ -26,6 +26,8 @@
                <ul class="sidenav">
                   <li><a href="#snav-content1"><i class="icon-screen"></i>Projects<i class="icon-chevron-right"></i></a>
                   </li>
+                  <li><a href="#messages"><i class="icon-mail"></i>Messages<i class="icon-chevron-right"></i></a>
+                  </li>
                </ul>
             </div>
 
@@ -79,6 +81,8 @@
                </div>
             </div>
 
+
+
             <div class="col-md-6 col-lg-8">
                <div id="snav-content1">
                   <div class="row">
@@ -110,14 +114,76 @@
                      <div class="row">
                         <div class="col-md-6">
                            <ul class="pagination pagination-transparent pagination-circle">
-                              <li class="page-item disabled"><a class="page-link" href="#" aria-label="Previous"><span
-                                       aria-hidden="true">&laquo;</span></a></li>
-                              <li class="page-item"><a class="page-link" href="#">{{$project->links()}}</a></li>
-                              <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span
-                                       aria-hidden="true">&raquo;</span></a></li>
+                              {{$project->links()}}
                            </ul>
                         </div>
                      </div>
+                     @else
+                     Empty Data!
+                     @endif
+                  </div>
+
+               </div>
+               <div id="messages">
+                  <div class="row">
+                     <div class="col-md-6 text-left">
+                        <h3>Messages Managements</h3>
+                     </div>
+                  </div>
+                  <div class="row">
+                     @if(!$mess->isEmpty())
+                     <table class="table table-hover">
+                        <thead>
+                           <tr>
+
+                              <th>#</th>
+                              <th>Name</th>
+                              <th>Project Type</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <?php $i=1; ?>
+                           @foreach ($mess as $messs)
+                           {{-- Modal view message --}}
+                           <div class="modal fade bs-example-modal-lg" id="viewmessage-{{$messs->message_id}}"
+                              tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-lg">
+                                 <div class="modal-body">
+                                    <div class="modal-content">
+                                       <div class="modal-header">
+                                          <h4 class="modal-title" id="myModalLabel">Lihat pesan projek</h4>
+                                          <button type="button" class="close" data-dismiss="modal"
+                                             aria-hidden="true">&times;</button>
+                                       </div>
+                                       <div class="modal-body">
+                                          <h3>Pesan dari {{$messs->nama}},</h3>
+                                          <p>
+                                             Tipe projek: {{$messs->project_type}} <br>
+                                             {!!$messs->pesan!!}
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <tr>
+                              <td>{{$i++}}</td>
+                              <td><a href="#viewmessage-{{$messs->message_id}}" data-toggle="modal"
+                                    data-target="#viewmessage-{{$messs->message_id}}">{{$messs->nama}} -
+                                    {{$messs->email}}</a></td>
+                              <td>{{$messs->project_type}}</td>
+                           </tr>
+                           @endforeach
+
+                           <div class="row">
+                              <div class="col-md-6">
+                                 <ul class="pagination pagination-transparent pagination-circle">
+                                    {{$mess->links()}}
+                                 </ul>
+                              </div>
+                           </div>
+                        </tbody>
+                     </table>
                      @else
                      Empty Data!
                      @endif

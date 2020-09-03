@@ -38,8 +38,12 @@ class DashboardController extends Controller
     {
         $project = DB::table('projectdbs')
             ->orderBy('projectdbs.created_at', 'DESC')
-            ->paginate(4);
-        return view('homepage.auth.dashboard', ['project' => $project]);
+            ->paginate(6);
+        $mess = DB::table('messages')
+            ->orderBy('messages.created_at', 'DESC')
+            ->paginate(25);
+
+        return view('homepage.auth.dashboard', ['project' => $project, 'mess' => $mess]);
     }
     public function addproject(Request $request)
     {

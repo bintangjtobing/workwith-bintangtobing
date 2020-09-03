@@ -171,9 +171,14 @@
             <div class="container" style="max-width: 1000px">
                <div class="row col-mb-30 mt-5">
                   <div class="col-md-3">
+                     <?php
+               $from = 2015;
+               $to = Date('Y');
+               $res = $to-$from;
+               ?>
                      <div class="d-flex align-items-center justify-content-center">
-                        <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="1" data-to="4"
-                              data-refresh-interval="2" data-speed="600"></span></div>
+                        <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="1"
+                              data-to="{{$res}}" data-refresh-interval="2" data-speed="600"></span></div>
                         <span>+ tahun berpengalaman.</span>
                      </div>
                   </div>
@@ -298,15 +303,17 @@
                   </div>
 
                   <div class="row justify-content-center col-mb-50">
+                     @foreach ($project as $project)
                      <div class="col-lg-6 h-translatey-3 tf-ts">
-                        <a href="https://euroupvc.co.id" class="portfolio-item" target="_blank">
+                        <a href="{{$project->link}}" class="portfolio-item" target="_blank">
                            <div class="portfolio-image">
-                              <img src="{!!asset('homepage/freelancer/images/works/1.jpg')!!}" alt="Portfoio Item">
+                              <img src="{!!asset('homepage/freelancer/images/works/'.$project->file)!!}"
+                                 alt="Portfolio Bintang Tobing">
                               <div class="bg-overlay">
                                  <div
                                     class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
-                                    <h3 class="mb-0 mt-1">Euro uPVC</h3>
-                                    <h5>uPVC, Home Equipment</h5>
+                                    <h3 class="mb-0 mt-1">{{$project->project_name}}</h3>
+                                    <h5>{{$project->category}}</h5>
                                  </div>
                                  <div class="bg-overlay-content align-items-start justify-content-end p-4">
                                     <div class="overlay-trigger-icon bg-dark text-white"
@@ -317,66 +324,7 @@
                            </div>
                         </a>
                      </div>
-
-                     <div class="col-lg-6 h-translatey-3 tf-ts">
-                        <a href="https://sarjanamalam.com" class="portfolio-item" target="_blank">
-                           <div class="portfolio-image">
-                              <img src="{!!asset('homepage/freelancer/images/works/2.jpg')!!}" alt="Portfoio Item">
-                              <div class="bg-overlay">
-                                 <div
-                                    class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
-                                    <h3 class="mb-0 mt-1">Sarjanamalam.</h3>
-                                    <h5>Forum, Startup</h5>
-                                 </div>
-                                 <div class="bg-overlay-content align-items-start justify-content-end p-4">
-                                    <div class="overlay-trigger-icon bg-dark text-white"
-                                       data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall"
-                                       data-hover-speed="350"><i class="icon-line-link"></i></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </a>
-                     </div>
-
-                     <div class="col-lg-6 h-translatey-3 tf-ts">
-                        <a href="https://btsa.co.id" class="portfolio-item" target="_blank">
-                           <div class="portfolio-image">
-                              <img src="{!!asset('homepage/freelancer/images/works/3.jpg')!!}" alt="Portfoio Item">
-                              <div class="bg-overlay">
-                                 <div
-                                    class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
-                                    <h3 class="mb-0 mt-1">BTSA Logistics</h3>
-                                    <h5>Logistics, Management</h5>
-                                 </div>
-                                 <div class="bg-overlay-content align-items-start justify-content-end p-4">
-                                    <div class="overlay-trigger-icon bg-dark text-white"
-                                       data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall"
-                                       data-hover-speed="350"><i class="icon-line-link"></i></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </a>
-                     </div>
-
-                     <div class="col-lg-6 h-translatey-3 tf-ts">
-                        <a href="https://starwhisper.id" class="portfolio-item" target="_blank">
-                           <div class="portfolio-image">
-                              <img src="{!!asset('homepage/freelancer/images/works/4.jpg')!!}" alt="Portfoio Item">
-                              <div class="bg-overlay">
-                                 <div
-                                    class="bg-overlay-content align-items-start justify-content-start flex-column px-5 py-4">
-                                    <h3 class="mb-0 mt-1">Starwhisper.</h3>
-                                    <h5>Apparel, Online-shop</h5>
-                                 </div>
-                                 <div class="bg-overlay-content align-items-start justify-content-end p-4">
-                                    <div class="overlay-trigger-icon bg-dark text-white"
-                                       data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall"
-                                       data-hover-speed="350"><i class="icon-line-link"></i></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </a>
-                     </div>
+                     @endforeach
                   </div>
 
                </div>
@@ -750,40 +698,45 @@
 
                   <div class="col-md-5">
                      <h3 class="h1 mb-5">Estimate your Project?</h3>
-                     <div class="form-widget" data-loader="button" data-alert-type="inline">
-
+                     <div class="form-widget">
+                        <?php $tokens = bin2hex(openssl_random_pseudo_bytes(64)); ?>
                         <div class="form-result"></div>
-
-                        <form class="row mb-0" id="landing-enquiry" action="include/form.php" method="post"
+                        <form class="row mb-0" action="/send-message/{{$tokens}}" method="post"
                            enctype="multipart/form-data">
+                           @csrf
                            <div class="form-process"></div>
                            <div class="col-12 form-group mb-4">
                               <label>What is Your Name:</label>
-                              <input type="text" name="landing-enquiry-name" id="landing-enquiry-name"
+                              <input type="text" name="nama" id="landing-enquiry-name"
                                  class="form-control border-form-control required" value="">
                            </div>
                            <div class="col-12 form-group mb-4">
                               <label>Your Email Address Please:</label>
-                              <input type="email" name="landing-enquiry-email" id="landing-enquiry-email"
+                              <input type="email" name="email" id="landing-enquiry-email"
                                  class="form-control border-form-control required" value="">
                            </div>
                            <div class="col-12 form-group mb-4">
-                              <label>Tell more about your Project:</label>
-                              <textarea name="landing-enquiry-additional-requirements"
-                                 id="landing-enquiry-additional-requirements" class="form-control border-form-control"
-                                 cols="10" rows="3"></textarea>
+                              <label for="">Project Type</label>
+                              <select name="project_type" id="" class="form-control custom-select" required>
+                                 <option>-- Select One --</option>
+                                 <option value="Website Development & Design">Website Development & Design
+                                 </option>
+                                 <option value="Logo & Company Needs Design">Logo & Company Needs Design
+                                 </option>
+                                 <option value="SEO (Search Engine Optimation)">SEO (Search Engine
+                                    Optimation)</option>
+                                 <option value="Domain & Web Hosting">Domain & Web Hosting</option>
+                              </select>
                            </div>
-                           <div class="col-12 d-none">
-                              <input type="text" id="landing-enquiry-botcheck" name="landing-enquiry-botcheck"
-                                 value="" />
+                           <div class="col-12 form-group mb-4">
+                              <label>Tell more about your Project:</label>
+                              <textarea name="pesan" id="landing-enquiry-additional-requirements"
+                                 class="form-control border-form-control" cols="10" rows="3"></textarea>
                            </div>
                            <div class="col-12">
-                              <button type="submit" name="landing-enquiry-submit"
-                                 class="button h-translatey-3 bg-dark rounded-pill"><i
+                              <button type="submit" name="" class="button h-translatey-3 bg-dark rounded-pill"><i
                                     class="icon-line-arrow-right m-0"></i></button>
                            </div>
-
-                           <input type="hidden" name="prefix" value="landing-enquiry-">
                         </form>
                      </div>
                   </div>

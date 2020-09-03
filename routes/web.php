@@ -11,7 +11,9 @@
 |
 */
 
-use App\Mail\kembangkanlahMail;
+use App\Mail\emailMe;
+use App\messageDB;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\DB;
 
@@ -23,7 +25,11 @@ Route::get('/', function () {
     return view('homepage.index', ['project' => $project]);
 });
 Route::get('/id', function () {
-    return view('id');
+    $project = DB::table('projectdbs')
+        ->orderBy('projectdbs.created_at', 'DESC')
+        ->limit(4)
+        ->get();
+    return view('id', ['project' => $project]);
 });
 Route::get('/projects-done', function () {
     $project = DB::table('projectdbs')
@@ -32,6 +38,27 @@ Route::get('/projects-done', function () {
     return view('homepage.projects', ['project' => $project]);
 });
 
+Route::post('/send-message/{tokens}', function (Request $request) {
+    $name = $request->nama;
+    $email = $request->email;
+    $project = $request->project_type;
+    $pesan = $request->pesan;
+
+    $message = new messageDB();
+    $message->nama = $name;
+    $message->email = $email;
+    $message->project_type = $project;
+    $message->pesan = $pesan;
+    // dd($message);
+    $message->save();
+
+
+    return view('emails.done');
+});
+
+Route::get('/congrat', function () {
+    return view('emails.done');
+});
 
 Route::get('/youtube', function () {
     return Redirect::to('http://www.youtube.com/c/BintangJeremiaTobing');
@@ -52,7 +79,7 @@ Route::get('/github', function () {
     return Redirect::to('http://www.github.com/bintangjtobing');
 });
 Route::get('/facebook', function () {
-    return Redirect::to('https://facebook.com/bintangjtobing');
+    return Redirect::to('https://facebook.com/bintangjtobingg');
 });
 
 

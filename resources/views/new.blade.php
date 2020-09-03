@@ -91,7 +91,7 @@
                                     alt="Workwith Bintang Logo"></a>
                         </div>
                         <div class="header-misc">
-                            <a href="#" class="button button-border rounded-pill">Email Me</a>
+                            <a href="#footer" class="button button-border rounded-pill">Email Me</a>
                         </div>
 
 
@@ -143,40 +143,45 @@
 
                         <div class="col-md-5">
                             <h3 class="h1 mb-5">Estimate your Project?</h3>
-                            <div class="form-widget" data-loader="button" data-alert-type="inline">
-
-                                <div class="form-result"></div>
-
-                                <form class="row mb-0" id="landing-enquiry" action="include/form.php" method="post"
+                            <div class="form-widget">
+                                <?php $tokens = bin2hex(openssl_random_pseudo_bytes(64)); ?>
+                                <form class="row mb-0" action="/send-message/{{$tokens}}" method="post"
                                     enctype="multipart/form-data">
+                                    @csrf
                                     <div class="form-process"></div>
                                     <div class="col-12 form-group mb-4">
                                         <label>What is Your Name:</label>
-                                        <input type="text" name="landing-enquiry-name" id="landing-enquiry-name"
+                                        <input type="text" name="nama" id="landing-enquiry-name"
                                             class="form-control border-form-control required" value="">
                                     </div>
                                     <div class="col-12 form-group mb-4">
                                         <label>Your Email Address Please:</label>
-                                        <input type="email" name="landing-enquiry-email" id="landing-enquiry-email"
+                                        <input type="email" name="email" id="landing-enquiry-email"
                                             class="form-control border-form-control required" value="">
                                     </div>
                                     <div class="col-12 form-group mb-4">
+                                        <label for="">Project Type</label>
+                                        <select name="project_type" id="" class="form-control custom-select" required>
+                                            <option>-- Select One --</option>
+                                            <option value="Website Development & Design">Website Development & Design
+                                            </option>
+                                            <option value="Logo & Company Needs Design">Logo & Company Needs Design
+                                            </option>
+                                            <option value="SEO (Search Engine Optimation)">SEO (Search Engine
+                                                Optimation)</option>
+                                            <option value="Domain & Web Hosting">Domain & Web Hosting</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 form-group mb-4">
                                         <label>Tell more about your Project:</label>
-                                        <textarea name="landing-enquiry-additional-requirements"
-                                            id="landing-enquiry-additional-requirements"
+                                        <textarea name="pesan" id="landing-enquiry-additional-requirements"
                                             class="form-control border-form-control" cols="10" rows="3"></textarea>
                                     </div>
-                                    <div class="col-12 d-none">
-                                        <input type="text" id="landing-enquiry-botcheck" name="landing-enquiry-botcheck"
-                                            value="" />
-                                    </div>
                                     <div class="col-12">
-                                        <button type="submit" name="landing-enquiry-submit"
+                                        <button type="submit" name=""
                                             class="button h-translatey-3 bg-dark rounded-pill"><i
                                                 class="icon-line-arrow-right m-0"></i></button>
                                     </div>
-
-                                    <input type="hidden" name="prefix" value="landing-enquiry-">
                                 </form>
                             </div>
                         </div>
