@@ -97,9 +97,9 @@
             </div>
             <div class="col-md-3">
                <div class="d-flex align-items-center justify-content-center">
-                  <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="4" data-to="10"
-                        data-refresh-interval="50" data-speed="1500"></span></div>
-                  <span>/ 14 Projects <br>Completed.</span>
+                  <div class="counter counter-xlarge text-dark font-weight-bolder"><span data-from="4"
+                        data-to="{{$count_pro}}" data-refresh-interval="50" data-speed="1500"></span></div>
+                  <span>Projects <br>Completed.</span>
                </div>
             </div>
 

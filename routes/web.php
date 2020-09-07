@@ -22,7 +22,10 @@ Route::get('/', function () {
         ->orderBy('projectdbs.created_at', 'DESC')
         ->limit(4)
         ->get();
-    return view('homepage.index', ['project' => $project]);
+    $count_pro = DB::table('projectdbs')
+        ->select('projectdbs.*')
+        ->count();
+    return view('homepage.index', ['project' => $project, 'count_pro' => $count_pro]);
 });
 Route::get('/id', function () {
     $project = DB::table('projectdbs')
