@@ -11,7 +11,7 @@
 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="shortcut icon" href="{!!asset('storage/img/icon-64x.png')!!}')!!}" alt="icon Bintang Tobing">
+   <link rel="shortcut icon" href="{!!asset('storage/img/icon-64x.png')!!}" alt="icon Bintang Tobing">
    <!-- Title -->
    <title>Work with | Bintang Tobing.</title>
    <link
